@@ -1,0 +1,39 @@
+.opening-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.opening-section__img {
+    position: absolute;
+    top: -40px;
+    right: 280px;
+    width: 210px;
+    height: 210px;
+    background-image: url("https://via.placeholder.com/728x90.png");
+}
+
+.opening-section__title{
+    font-size: 35px
+}
+
+.opening-section__box {
+    display: flex;
+    align-items: center
+}
+
+.opening-section__hours {
+    display: flex;
+    margin-left: 166px;
+}
+
+.opening-section__hours-box {
+    margin-left: 40px;
+}
+.opening-section__hours-box-days{
+    font-size: 20px;
+}
+.opening-section__hours-box-hours {
+    font-size: 30px;
+    color: $color-primary;
+}

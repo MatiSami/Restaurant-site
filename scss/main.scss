@@ -1,0 +1,19 @@
+$color-bg:#7D8587;
+$color-text: #444444;
+$color-logo: #FEA100;
+
+$color-primary: #FEA100;
+// $color-secondary: #f2f2f2;
+$bp-mobile: 980px;
+
+@import "grid";
+@import "normalize";
+@import "layout";
+@import "header";
+@import "slider";
+@import "menu";
+@import "reservation";
+@import "reco";
+@import "gallery";
+@import "opening";
+@import "footer";
