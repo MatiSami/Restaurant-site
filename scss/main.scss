@@ -1,12 +1,22 @@
 $color-bg:#7D8587;
 $color-text: #444444;
 $color-logo: #FEA100;
-
 $color-primary: #FEA100;
 // $color-secondary: #f2f2f2;
-$bp-mobile: 980px;
 
-@import "grid";
+// $fs-large: calc(4vw + 4vh + 2vmin);
+
+
+// Small devices (landscape phones, 576px and up)
+$bp-mobile: 576px;
+// Medium devices (tablets, 768px and up)
+$bp-medium: 768px;
+// Large devices (desktops, 992px and up)
+$bp-large: 992px;
+// Extra large devices (large desktops, 1200px and up)
+$bp-extra-lg: 1200px;
+
+// @import "grid";
 @import "normalize";
 @import "layout";
 @import "header";

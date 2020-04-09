@@ -11,6 +11,10 @@
     width: 210px;
     height: 210px;
     background-image: url("https://via.placeholder.com/728x90.png");
+
+    @media (max-width:1000px) {
+        display: none;
+    }
 }
 
 .opening-section__title{
@@ -19,12 +23,21 @@
 
 .opening-section__box {
     display: flex;
-    align-items: center
+    align-items: center;
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
 }
 
 .opening-section__hours {
     display: flex;
     margin-left: 166px;
+
+    @media (max-width:1000px) {
+        margin-left: 0;
+        align-items: center;
+    }
 }
 
 .opening-section__hours-box {

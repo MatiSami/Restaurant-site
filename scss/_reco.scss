@@ -15,7 +15,11 @@
 .reco-section_img{
     width: 269px;
     height: 295px;
-    background-image: url("https://via.placeholder.com/269x295")
+    background-image: url("https://via.placeholder.com/269x295");
+
+    @media (max-width:1000px) {
+        display: none;
+    }
 }
 
 .reco-section_recomendation-box{
@@ -23,12 +27,20 @@
     flex-direction: column;
     width: 828px;
     padding: 50px;
+
+    @media (max-width:1000px) {
+        width: auto;
+    }
 }
 
 .reco-section_recomendation-content_text{
     width: 638px;
     line-height: 29.95px;
     font-size: 14.97px;
+
+    @media (max-width:1000px) {
+        width: auto;
+    }
 }
 
 .fa-star{
