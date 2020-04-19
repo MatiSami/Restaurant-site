@@ -1,201 +1,205 @@
 .footer-page {
-    background: #373844;
+  background: #373844;
 }
-.footer__box{
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: space-between;
-    color: #ADB2B7;
-    flex-wrap: wrap;
+.footer__box {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: space-between;
+  color: #adb2b7;
+  flex-wrap: wrap;
 
-    @media (max-width: 1000px) {
-        margin: 0 80px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        :nth-child(1) {order: 1;}
-        :nth-child(2) {order: 3;}
-        :nth-child(3) {order: 2;}
+  @media (max-width: 1000px) {
+    margin: 0 80px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    :nth-child(1) {
+      order: 1;
     }
+    :nth-child(2) {
+      order: 3;
+    }
+    :nth-child(3) {
+      order: 2;
+    }
+  }
 }
 
-.footer__nav{
-    width: 113px;
-    order: 1;
+.footer__nav {
+  width: 113px;
+  order: 1;
 }
 
-.footer__title{
-    color: grey;
-    padding-bottom: 20px;
-    font-size: 24px;
+.footer__title {
+  color: grey;
+  padding-bottom: 20px;
+  font-size: 24px;
 }
 
-.footer__nav-list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.footer__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.footer__nav-list_el{
-    padding-bottom: 5px;
+.footer__nav-list_el {
+  padding-bottom: 5px;
 }
 .footer__platform-box {
-    display: flex;
-    flex-direction: row;
-    background-color: #52535E;
-    margin-bottom: 12px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #52535e;
+  margin-bottom: 12px;
+  align-items: center;
 }
 
 .footer__platform-box__text {
-    padding: 5px;
-    padding-left: 20px;
+  padding: 5px;
+  padding-left: 20px;
 }
 
 .footer__newsleter {
-    width: 471px;
-    order: 2;
+  width: 471px;
+  order: 2;
 
-    @media (max-width:1000px) {
-        padding-top: 20px;
-    }
+  @media (max-width: 1000px) {
+    padding-top: 20px;
+  }
 }
 
-.footer__form{
-    display: flex;
-    height: 51px;
-    width: 100%;
+.footer__form {
+  display: flex;
+  height: 51px;
+  width: 100%;
 
-    @media (max-width: 1000px) {
-        flex-direction: column;
-    }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
-.footer__newsleter-form__title{
-    padding-bottom: 20px;
+.footer__newsleter-form__title {
+  padding-bottom: 20px;
 }
 
-.footer__newsleter-form__input{
-    height: 41px;
-    width: 311px;
-    background-color: #373844;
-    border: 1px solid grey;
-    border-radius: 5px;
+.footer__newsleter-form__input {
+  height: 41px;
+  width: 311px;
+  background-color: #373844;
+  border: 1px solid grey;
+  border-radius: 5px;
 
-    @media (max-width: 1000px) {
-        width: 200px;
-        margin-bottom: 20px;
-    }
+  @media (max-width: 1000px) {
+    width: 200px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__newsleter-form__submit {
-    width: 149px;
-    height: 41px;
-    color: #fff;
+  width: 149px;
+  height: 41px;
+  color: #fff;
 
-    @media (max-width: 1000px) {
-        margin-bottom: 20px;
-    }
+  @media (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__platform {
-    width: 220px;
-    order: 3;
+  width: 220px;
+  order: 3;
 }
-.footer__newsleter-social{
-    display: flex;
-    padding-top: 40px;
-
+.footer__newsleter-social {
+  display: flex;
+  padding-top: 40px;
 }
 
 .footer__newsleter-social__el {
-    width: 52px;
-height: 52px;
-border-radius: 50%;
-margin-left: 5px;
-display: flex;
-align-items: center;
-justify-content: center;  
-    color: #fff;
-} 
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
 .footer__newsleter-social__el:first-of-type {
-         margin-left: 0;
-   }
-
-.fb{
- background-color: #3B5998;
+  margin-left: 0;
 }
-.tw{
-    background-color: #55ACEE;
- }
-.google{
-   background-color: #DD4B39;
- }
- .footer__platform-box{
-    display: flex;
-  }
 
-  .footer__platform-box__text{
-      display: flex;
-      flex-direction: column;
-      color: #EDF1F3;
-      font-size: 11px;
-  }
+.fb {
+  background-color: #3b5998;
+}
+.tw {
+  background-color: #55acee;
+}
+.google {
+  background-color: #dd4b39;
+}
+.footer__platform-box {
+  display: flex;
+}
 
-.footer__platform-box__device{
-    font-size: 18px;
+.footer__platform-box__text {
+  display: flex;
+  flex-direction: column;
+  color: #edf1f3;
+  font-size: 11px;
+}
+
+.footer__platform-box__device {
+  font-size: 18px;
 }
 .footer__platform__img-apple {
-    width: 29px;
-    height: 33px;
-    background-image: url("../assets/footer/icon_apple.png");
-    margin-left: 20px;
+  width: 29px;
+  height: 33px;
+  background-image: url("../assets/footer/icon_apple.png");
+  margin-left: 20px;
 }
 .footer__platform__img-play-store {
-    width: 29px;
-    height: 33px;
-    background-image: url("../assets/footer/icon_Google\ Play.png");
-    margin-left: 20px;
+  width: 29px;
+  height: 33px;
+  background-image: url("../assets/footer/icon_Google\ Play.png");
+  margin-left: 20px;
 }
 
-.footer-copy{
-    width: 100%;
-    height: 25px;
-    margin: 50px 0;
-    text-align: center;
-    font-size: 14px;
-    position: relative;
-    // background-color: #57585C;
+.footer-copy {
+  width: 100%;
+  height: 25px;
+  margin: 50px 0;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  // background-color: #57585C;
 }
 
 .footer-copy:after {
-    content: '';
-    width: 100%;
-    border-bottom: solid 1px #fff;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: 1;
-    }
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
 
-    .footer-copy__text {
-        background-color: #373844; /* Same as the parents Background */
-        width: auto;
-        display: inline-block;
-        z-index: 3;
-        padding: 0 20px 0 20px;
-        color: white;
-        position: relative;
-        font-family: calibri;
-        font-weight: lighter;
-        margin: 0;
-    }
-
+.footer-copy__text {
+  background-color: #373844; /* Same as the parents Background */
+  width: auto;
+  display: inline-block;
+  z-index: 3;
+  padding: 0 20px 0 20px;
+  color: white;
+  position: relative;
+  font-family: calibri;
+  font-weight: lighter;
+  margin: 0;
+}
 
 .footer-copy_box {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 
-    @media (max-width: 1000px) {
-        padding-bottom: 25px;
-    }
+  @media (max-width: 1000px) {
+    padding-bottom: 25px;
+  }
 }

@@ -13,7 +13,6 @@
     />
     <script src="https://use.fontawesome.com/85f7ef1108.js"></script>
     <link rel="stylesheet" href="css/main.css" />
-
   </head>
   <body>
     <!-- section with nav and carousel -->
@@ -39,11 +38,7 @@
               <span class="carousel-content__icon-number">1-008 005 006</span>
             </div>
           </div>
-          <img
-            class="d-block"
-            src="./assets/slider/1.jpg"
-            alt="First slide"
-          />
+          <img class="d-block" src="./assets/slider/1.jpg" alt="First slide" />
         </div>
         <div class="carousel-item">
           <div class="carousel-content">
@@ -61,11 +56,7 @@
               <span class="carousel-content__icon-number">1-008 005 006</span>
             </div>
           </div>
-          <img
-            class="d-block "
-            src="./assets/slider/2.jpg"
-            alt="Second slide"
-          />
+          <img class="d-block" src="./assets/slider/2.jpg" alt="Second slide" />
         </div>
         <div class="carousel-item">
           <div class="carousel-content">
@@ -83,11 +74,7 @@
               <span class="carousel-content__icon-number">1-008 005 006</span>
             </div>
           </div>
-          <img
-            class="d-block"
-            src="./assets/slider/3.jpg"
-            alt="Third slide"
-          />
+          <img class="d-block" src="./assets/slider/3.jpg" alt="Third slide" />
         </div>
       </div>
 
@@ -102,23 +89,56 @@
             <nav class="page-nav">
               <ul class="page-nav-list">
                 <li class="active page-nav-list-element">
-                  <a href="">home </a>
+                  <a href="/">home </a>
                 </li>
-                <li class="page-nav-list-element"><a href="">Menu</a></li>
+                <li class="page-nav-list-element"><a href="#menu">Menu</a></li>
                 <li class="page-nav-list-element">
-                  <a href="">Reservation</a>
+                  <a href="#reservation">Reservation</a>
                 </li>
                 <li class="page-nav-list-element"><a href="">recipe</a></li>
-                <li class="page-nav-list-element"><a href="">blog</a></li>
+                <li class="page-nav-list-element"><a href="#blog">blog</a></li>
                 <li class="page-nav-list-element"><a href="">Pages</a></li>
-                <li class="page-nav-list-element"><a href="">Contact</a></li>
+                <li class="page-nav-list-element">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </nav>
-            <span class="page-nav_btn-shop"></span>
-            <button class="btn page-nav-btn" aria-label="Menu">
-              <span class="page-nav-btn__icon"></span>
-              BOOK YOUR TABLE
-            </button>
+
+            <!-- mobile menu -->
+
+            <div class="page-nav-mobile">
+              <div class="page-nav-mobile_bars" id="menu-mobile" onclick="myFunction(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+              <nav id="mobile-nav">
+                <ul class="mobile-nav-list">
+                  <li class="mobile-nav-element">
+                    <a href="/">home </a>
+                  </li>
+                  <li class="mobile-nav-element"><a href="#menu">Menu</a></li>
+                  <li class="mobile-nav-element">
+                    <a href="#reservation">Reservation</a>
+                  </li>
+                  <li class="mobile-nav-element"><a href="">recipe</a></li>
+                  <li class="mobile-nav-element"><a href="#blog">blog</a></li>
+                  <li class="mobile-nav-element"><a href="">Pages</a></li>
+                  <li class="mobile-nav-element">
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
+            <!-- end of mobile menu -->
+            <div class="page-nav__elements">
+              <span class="page-nav_btn-shop"></span>
+              <button class="btn page-nav-btn" aria-label="Menu">
+                <span class="page-nav-btn__icon"></span>
+                BOOK YOUR TABLE
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -143,7 +163,7 @@
     </div>
     <!-- section with menu and specials -->
     <div class="container">
-      <section class="menu-box">
+      <section class="menu-box" id="menu">
         <div class="menu_box__left">
           <div class="menu-box__title">Food Menu</div>
           <div class="menu-box__elements">
@@ -215,7 +235,7 @@
     </div>
 
     <!-- section with reservation -->
-    <section class="reservation-section">
+    <section class="reservation-section" id="reservation">
       <div class="container">
         <div class="reservation-section__title">Reserve your table</div>
         <div class="reservation-section__box">
@@ -247,7 +267,7 @@
 
     <!-- section with recomendation -->
 
-    <section class="reco-section">
+    <section class="reco-section" id="blog">
       <div class="container">
         <div class="reco-section_title">Happy Clients</div>
         <div class="reco-section_box">
@@ -290,103 +310,115 @@
     <section class="opening-section">
       <div class="opening-section__img"></div>
       <div class="container">
-      <div class="opening-section__box">
-        <div class="opening-section__title">
+        <div class="opening-section__box">
+          <div class="opening-section__title">
             Opening Hours
-        </div>
-        <div class="opening-section__hours">
+          </div>
+          <div class="opening-section__hours">
             <div class="opening-section__hours-box">
               <div class="opening-section__hours-box-days">
-                  Monday to Friday
+                Monday to Friday
               </div>
               <span class="opening-section__hours-box-hours">
-                  10am - 10pm
+                10am - 10pm
               </span>
             </div>
             <div class="opening-section__hours-box">
-                <div class="opening-section__hours-box-days">
-                    Saturday to Sunday 
-                </div>
-                <span class="opening-section__hours-box-hours">
-                    09am - 11pm
-                </span>
+              <div class="opening-section__hours-box-days">
+                Saturday to Sunday
               </div>
+              <span class="opening-section__hours-box-hours">
+                09am - 11pm
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </section>
 
-  
-    <footer class="footer-page">
+    <footer class="footer-page" id="contact">
       <div class="container">
-      <div class="footer__box">
-        <div class="footer__nav">
+        <div class="footer__box">
+          <div class="footer__nav">
             <div class="footer__title">
-                Navigation
-        </div>
-        <ul class="footer__nav-list">
-          <li class="footer__nav-list_el">Home</li>
-          <li class="footer__nav-list_el">About us</li>
-          <li class="footer__nav-list_el">Menu</li>
-          <li class="footer__nav-list_el">Reservation</li>
-          <li class="footer__nav-list_el">Recipe</li>
-          <li class="footer__nav-list_el">Blog</li>
-          <li class="footer__nav-list_el">Contact Us</li>
-        </ul>
-      </div>
+              Navigation
+            </div>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-list_el">Home</li>
+              <li class="footer__nav-list_el">About us</li>
+              <li class="footer__nav-list_el">Menu</li>
+              <li class="footer__nav-list_el">Reservation</li>
+              <li class="footer__nav-list_el">Recipe</li>
+              <li class="footer__nav-list_el">Blog</li>
+              <li class="footer__nav-list_el">Contact Us</li>
+            </ul>
+          </div>
 
-      <div class="footer__newsleter">
-          <div class="footer__title">
+          <div class="footer__newsleter">
+            <div class="footer__title">
               Newsletter
-          </div>
-          <div class="footer__newsleter-form">
-            <div class="footer__newsleter-form__title">
+            </div>
+            <div class="footer__newsleter-form">
+              <div class="footer__newsleter-form__title">
                 Enter your email address and subscribe daily newsletter
+              </div>
+              <div class="footer__form">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="footer__newsleter-form__input"
+                />
+                <button
+                  type="submit"
+                  value=""
+                  class="footer__newsleter-form__submit btn"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
             </div>
-            <div class="footer__form">
-               <input type="email" name="email" id="email" class="footer__newsleter-form__input">
-            <button type="submit" value="" class="footer__newsleter-form__submit btn">SUBSCRIBE</button>
+            <div class="footer__newsleter-social">
+              <div class="footer__newsleter-social__el fb">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+              <div class="footer__newsleter-social__el tw">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="footer__newsleter-social__el google">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </div>
             </div>
-           
           </div>
-          <div class="footer__newsleter-social">
-            <div class="footer__newsleter-social__el fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-            <div class="footer__newsleter-social__el tw"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-            <div class="footer__newsleter-social__el google"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-          </div>
-      </div>
 
-      <div class="footer__platform">
-        <div class="footer__title">Our app avilable</div>
-        <div class="footer__platform-box">
-          <div class="footer__platform__img-apple"></div>
-          <div class="footer__platform-box__text">
-             Avilable on the 
-            <span class="footer__platform-box__device">App Store</span>
-          </div>
-         
-        </div>
-        <div class="footer__platform-box">
-            <div class="footer__platform__img-play-store"></div>
-            <div class="footer__platform-box__text">
-                Get it on 
-              <span class="footer__platform-box__device">Google Play</span>
+          <div class="footer__platform">
+            <div class="footer__title">Our app avilable</div>
+            <div class="footer__platform-box">
+              <div class="footer__platform__img-apple"></div>
+              <div class="footer__platform-box__text">
+                Avilable on the
+                <span class="footer__platform-box__device">App Store</span>
+              </div>
             </div>
+            <div class="footer__platform-box">
+              <div class="footer__platform__img-play-store"></div>
+              <div class="footer__platform-box__text">
+                Get it on
+                <span class="footer__platform-box__device">Google Play</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy_box">
+          <div class="footer-copy">
+            <div class="footer-copy__text">
+              2016 © LUXURY RESTAURANT, ALL RIGHTS RESERVED
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="footer-copy_box">
-      <div class="footer-copy">
-        <div class="footer-copy__text">
-          2016 © LUXURY RESTAURANT, ALL RIGHTS RESERVED
-        </div>
-      </div>
-      </div>
-
-    </div>
     </footer>
-   
- 
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -402,6 +434,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
+    <script src="scripts/sliiide.min.js"></script>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
