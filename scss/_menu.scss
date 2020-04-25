@@ -16,6 +16,15 @@
   margin-top: 80px;
   font-size: 35px;
 }
+
+@media (max-width: 1000px) {
+  .menu-box__title {
+    margin-top: 7px;
+  } 
+  
+}
+
+
 .menu-box__element-info {
   display: flex;
   margin-bottom: 10px;

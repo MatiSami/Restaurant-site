@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <header class="page-header">
+      <header class="page-header page-header--transparent">
         <div class="container">
           <div class="page-header-box">
             <a href="/" class="page-logo" aria-current="page">
@@ -107,29 +107,37 @@
             <!-- mobile menu -->
 
             <div class="page-nav-mobile">
-              <div class="page-nav-mobile_bars" id="menu-mobile" onclick="myFunction(this)">
+              <div
+                class="page-nav-mobile_bars"
+                id="menu-mobile"
+                onclick="myFunction(this)"
+              >
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
               </div>
             </div>
-              <nav id="mobile-nav">
-                <ul class="mobile-nav-list">
-                  <li class="mobile-nav-element">
-                    <a href="/">home </a>
-                  </li>
-                  <li class="mobile-nav-element"><a href="#menu">Menu</a></li>
-                  <li class="mobile-nav-element">
-                    <a href="#reservation">Reservation</a>
-                  </li>
-                  <li class="mobile-nav-element"><a href="">recipe</a></li>
-                  <li class="mobile-nav-element"><a href="#blog">blog</a></li>
-                  <li class="mobile-nav-element"><a href="">Pages</a></li>
-                  <li class="mobile-nav-element">
-                    <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </nav>
+            <nav id="mobile-nav">
+              <ul class="mobile-nav-list">
+                <li class="mobile-nav-element">
+                  <a href="/">home </a>
+                </li>
+                <li class="mobile-nav-element"><a href="#menu">Menu</a></li>
+                <li class="mobile-nav-element">
+                  <a href="#reservation">Reservation</a>
+                </li>
+                <li class="mobile-nav-element"><a href="">recipe</a></li>
+                <li class="mobile-nav-element"><a href="#blog">blog</a></li>
+                <li class="mobile-nav-element"><a href="">Pages</a></li>
+                <li class="mobile-nav-element">
+                  <a href="#contact">Contact</a>
+                </li>
+                <button class="btn page-nav-btn-mobile" aria-label="Menu">
+                  <span class="page-nav-btn-mobile__icon"></span>
+                  BOOK YOUR TABLE
+                </button>
+              </ul>
+            </nav>
 
             <!-- end of mobile menu -->
             <div class="page-nav__elements">
@@ -238,19 +246,29 @@
     <section class="reservation-section" id="reservation">
       <div class="container">
         <div class="reservation-section__title">Reserve your table</div>
+        <form action=""></form>
         <div class="reservation-section__box">
           <div class="reservation-section_inputs-box">
-            <div class="reservation-section_inputs-box-left">
-              <input type="text" placeholder="Name*" />
-              <input type="text" placeholder="Time*" />
-              <input type="text" placeholder="Guest*" />
-            </div>
-            <div class="reservation-section_inputs-box-rigth">
-              <input type="email" name="" id="" placeholder="Email adress*" />
-              <input type="text" placeholder="Date*" />
-              <input type="text" placeholder="Phone*" />
-            </div>
+            
+              <div class="reservation-section_inputs-box-left">
+                <label for="name"></label>
+                <input type="text" placeholder="Name*" id="name" />
+                <label for="time"></label>
+                <input type="time" placeholder="Time*" id="time"/>
+                <label for="numebr"></label>
+                <input type="number" placeholder="Guest*" id="number" min="1" max="10"/>
+              </div>
+              <div class="reservation-section_inputs-box-rigth">
+                <label for="email"></label>
+                <input type="email" name="" id="" placeholder="Email adress*" id="email" />
+                <label for="date"></label>
+                <input type="date" placeholder="Date*" id="date"/>
+                <label for="phone"></label>
+                <input type="text" placeholder="Phone*" id="phone"/>
+              </div>
+            
           </div>
+          </form>
           <div class="reservation-section_bottom-panel">
             <div class="btn">MAKE RESERVATION</div>
             <div class="reservation-section_bottom-panel_info">
@@ -308,7 +326,6 @@
     </section>
 
     <section class="opening-section">
-      <div class="opening-section__img"></div>
       <div class="container">
         <div class="opening-section__box">
           <div class="opening-section__title">
